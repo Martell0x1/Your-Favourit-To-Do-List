@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=To_DoList
+CMAKE_PROJECT_NAME:STATIC=Your-Favourit-To-Do-List
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -224,11 +224,23 @@ To_DoList_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 To_DoList_SOURCE_DIR:STATIC=/home/martell/gits/Your-Favourit-To-Do-List
 
+//Value Computed by CMake
+Your-Favourit-To-Do-List_BINARY_DIR:STATIC=/home/martell/gits/Your-Favourit-To-Do-List/cmake-build-debug
+
+//Value Computed by CMake
+Your-Favourit-To-Do-List_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Your-Favourit-To-Do-List_SOURCE_DIR:STATIC=/home/martell/gits/Your-Favourit-To-Do-List
+
 //Location of wxWidgets library configuration provider binary (wx-config).
 wxWidgets_CONFIG_EXECUTABLE:FILEPATH=/usr/local/bin/wx-config
 
 //Use debug build?
 wxWidgets_USE_DEBUG:BOOL=OFF
+
+//Location of wxWidgets resource file compiler binary (wxrc)
+wxWidgets_wxrc_EXECUTABLE:FILEPATH=/usr/local/bin/wxrc
 
 
 ########################
@@ -376,6 +388,8 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding wxWidgets
+FIND_PACKAGE_MESSAGE_DETAILS_wxWidgets:INTERNAL=[-L/usr/local/lib;-pthread;;;-lwx_gtk3u_core-3.3;-lwx_baseu-3.3][/usr/local/lib/wx/include/gtk3-unicode-3.3;/usr/local/include/wx-3.3][v3.3.0()]
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 

@@ -1,0 +1,3 @@
+/home/martell/gits/Your-Favourit-To-Do-List/cmake-build-debug/CMakeFiles/To_DoList.dir
+/home/martell/gits/Your-Favourit-To-Do-List/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/martell/gits/Your-Favourit-To-Do-List/cmake-build-debug/CMakeFiles/rebuild_cache.dir

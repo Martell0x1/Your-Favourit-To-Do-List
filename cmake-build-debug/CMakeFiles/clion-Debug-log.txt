@@ -1,10 +1,7 @@
 /mnt/dos/clion-2024.1.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/mnt/dos/clion-2024.1.1/bin/ninja/linux/x64/ninja -G Ninja -S /home/martell/gits/Your-Favourit-To-Do-List -B /home/martell/gits/Your-Favourit-To-Do-List/cmake-build-debug
-CMake Error at /mnt/dos/clion-2024.1.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
-  Could NOT find wxWidgets (missing: wxWidgets_LIBRARIES)
-Call Stack (most recent call first):
-  /mnt/dos/clion-2024.1.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:600 (_FPHSA_FAILURE_MESSAGE)
-  /mnt/dos/clion-2024.1.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindwxWidgets.cmake:988 (find_package_handle_standard_args)
-  CMakeLists.txt:11 (find_package)
-
-
--- Configuring incomplete, errors occurred!
+-- Found wxWidgets: -L/usr/local/lib;-pthread;;;-lwx_gtk3u_core-3.3;-lwx_baseu-3.3 (found version "3.3.0") 
+-- wxWidgets_CXX_FLAGS: -pthread
+-- wxWidgets_LIBS: -L/usr/local/lib -pthread   -lwx_gtk3u_xrc-3.3 -lwx_gtk3u_html-3.3 -lwx_gtk3u_qa-3.3 -lwx_gtk3u_core-3.3 -lwx_baseu_xml-3.3 -lwx_baseu_net-3.3 -lwx_baseu-3.3
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/martell/gits/Your-Favourit-To-Do-List/cmake-build-debug
