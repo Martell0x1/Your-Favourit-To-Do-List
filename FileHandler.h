@@ -10,6 +10,7 @@ class FileHandler {
 private:
     const static string CURRENTPATH;
 public:
+    static void Check_File();
     static vector<string> ReadFile();
 
     static void WriteFile(const string &dataline, bool append = true);

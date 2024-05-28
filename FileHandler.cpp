@@ -5,8 +5,21 @@
 #include "FileHandler.h"
 
 const string FileHandler::CURRENTPATH = "tasks.txt";
+void FileHandler::Check_File() {
+    ifstream file(CURRENTPATH);
+    if(!file.is_open()) {
+        ofstream File(CURRENTPATH);
+        if(File.is_open()) {
+            File << "";
+            File.close();
+        }
+        else {throw new runtime_error("Cannot Create The Tasks File");}
+    }
+    file.close();
+}
 
 vector<string> FileHandler::ReadFile(){
+    Check_File();
     vector<string> Lines;
     ifstream File;
     File.open(CURRENTPATH,ios::in);
@@ -23,6 +36,7 @@ vector<string> FileHandler::ReadFile(){
     return Lines;
 }
 void FileHandler::WriteFile(const string& dataline , bool append) {
+    Check_File();
     ofstream File;
     auto mode = std::ios::out | (append ? std::ios::app : std::ios::trunc);
     File.open(CURRENTPATH,mode);
